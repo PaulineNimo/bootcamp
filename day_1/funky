@@ -1,0 +1,17 @@
+def funky(a,b):
+	if type(a) is dict and type(b) is dict:
+		a.update(b)
+		print a
+	elif (type(a) is int and type(b) is float) or (type(a) is float and type(b) is int):
+		print a + b
+	elif type(a) is not type(b):
+		print "Data types cannot be added!"	
+	else:
+		print a + b	
+
+funky([2,3],[6,68])
+funky(3,5)
+funky("fizz","buzz")
+funky({'tree':1,'chair':2},{'book':3,'pen':4})
+funky(2.54,35)
+funky(2.75,7.83)
